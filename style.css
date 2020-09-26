@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 30px;
+    background:hsl(0, 0%, 98%);
+}
+
+.header {
+    text-align: center;
+}
+
+.first-line {
+    font-weight: 200;
+    font-size: 30px;
+    color: hsl(234, 12%, 34%);
+}
+
+.title {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+}
+
+.paragraph {
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box {
+    height: 250px;
+    width: 350px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: -3px 5px 10px hsl(229, 6%, 66%);
+}
+
+.primary {
+    border-top: 3px solid hsl(0, 78%, 62%);
+    grid-column: 2/3;
+    grid-row: 1/2;
+} 
+
+.secondary {
+    border-top: 3px solid hsl(180, 62%, 55%);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.tertiary {
+    border-top: 3px solid hsl(212, 86%, 64%);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.quartenary {
+    border-top: 3px solid hsl(34, 97%, 64%);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.stitle {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 5px;
+    color: hsl(234, 12%, 34%);
+}
+
+.sparagraph {
+    font-weight: 400;
+    font-size: 13px;
+    color: hsl(229, 6%, 66%);
+    line-height: 25px;
+}
+
+.homepage,
+.scoop,
+.monitor,
+.lamp {
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+@media screen and (max-width: 470px){
+
+    .boxes {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .primary {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .secondary {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .tertiary {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .quartenary {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
