@@ -54,19 +54,20 @@ body {
 .secondary {
     border-top: 3px solid hsl(180, 62%, 55%);
     grid-column: 1/2;
-    grid-row: 2/3;
+    margin-top: 120px;
 }
 
 .tertiary {
     border-top: 3px solid hsl(212, 86%, 64%);
     grid-column: 3/4;
-    grid-row: 2/3;
+    margin-top: 120px;
 }
 
 .quartenary {
     border-top: 3px solid hsl(34, 97%, 64%);
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
+    margin-top: 300px;
 }
 
 .stitle {
